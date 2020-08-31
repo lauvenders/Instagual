@@ -7,11 +7,19 @@
  </head>
  <body>
   <vaadin-vertical-layout spacing="false" size-full margin="false">
-   <vaadin-horizontal-layout style-name="comentarioVista" responsive size-full _id="comentarioVista">
-    <vaadin-label width-full plain-text _id="textoComentario" :expand="0.1">
-      @usuario: comentario añadido por un usuario 
-    </vaadin-label>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e80b" style-name="eliminarComentarioButton" plain-text _id="eliminarComentarioButton" :bottom :right></vaadin-button>
+   <vaadin-horizontal-layout style-name="card" width-full height="70px">
+    <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
+    <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="60px" height="60px" _id="fotoPerfil" :middle :center></vaadin-image>
+    <vaadin-horizontal-layout spacing="false" :middle :expand>
+     <vaadin-label style-name="small" plain-text>
+       @usuario 
+     </vaadin-label>
+     <vaadin-absolute-layout width="10px" height-auto :middle></vaadin-absolute-layout>
+     <vaadin-label style-name="small" plain-text>
+       Comentario 
+     </vaadin-label>
+    </vaadin-horizontal-layout>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e80b" style-name="eliminarComentarioButton" plain-text _id="eliminarComentarioButton" :middle></vaadin-button>
    </vaadin-horizontal-layout>
   </vaadin-vertical-layout>
  </body>

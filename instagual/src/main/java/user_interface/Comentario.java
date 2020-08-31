@@ -8,7 +8,7 @@ public class Comentario extends Comentario_inv_ {
 	}
 	Comentario(){
 		this.eliminarComentarioButton.setVisible(true);
-		this.textoComentario.setValue(" ");
+		// this.textoComentario.setValue(" ");
 	}
 
 	//private event _dar_Quitar_me_gusta_comentario;

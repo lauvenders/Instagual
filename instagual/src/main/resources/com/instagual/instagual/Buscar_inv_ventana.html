@@ -8,11 +8,14 @@
  <body>
   <vaadin-vertical-layout spacing="false" margin="false">
    <vaadin-horizontal-layout style-name="card" width-full>
-    <vaadin-text-field icon="fonticon://Vaadin-Icons/e805" style-name="borderless inline-icon" placeholder="buscar..." width-full></vaadin-text-field>
+    <vaadin-text-field icon="fonticon://Vaadin-Icons/e805" style-name="borderless inline-icon" placeholder="buscar..." width-full _id="textoBusqueda"></vaadin-text-field>
+    <vaadin-button style-name="primary" plain-text _id="buscarBtn" :right>
+      Buscar 
+    </vaadin-button>
    </vaadin-horizontal-layout>
    <vaadin-tab-sheet style-name="equal-width-tabs centered-tabs compact-tabbar" size-full>
     <tab icon="fonticon://Vaadin-Icons/e624" selected>
-     <vaadin-vertical-layout spacing="false" margin="false">
+     <vaadin-vertical-layout spacing="false" margin="false" _id="usuarioBusquedaLayout">
       <vaadin-horizontal-layout style-name="card" width-full height="70px" _id="user1">
        <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
        <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="60px" height="60px" _id="fotoPerfil" :middle :center></vaadin-image>
@@ -40,7 +43,7 @@
      </vaadin-vertical-layout>
     </tab>
     <tab icon="fonticon://Vaadin-Icons/e6a9">
-     <vaadin-vertical-layout spacing="false" size-full margin="false">
+     <vaadin-vertical-layout spacing="false" size-full margin="false" _id="publicacionBusquedaLayout">
       <vaadin-horizontal-layout style-name="card" width-full height="70px">
        <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
        <vaadin-image source="theme://images/ejemplo.jpeg" width="60px" height="60px" _id="fotoPerfil2" :middle :center></vaadin-image>

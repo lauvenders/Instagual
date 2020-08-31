@@ -7,14 +7,14 @@
  </head>
  <body>
   <vaadin-vertical-layout size-full margin-left="false" margin-right="false">
-   <vaadin-vertical-layout>
-    <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="200px" height="200px" :center></vaadin-image>
-    <vaadin-button style-name="borderless-colored small" plain-text :center>
+   <vaadin-vertical-layout _id="mainLayout">
+    <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="200px" height="200px" :center _id="fotoPerfil"></vaadin-image>
+    <vaadin-button style-name="borderless-colored small" plain-text :center _id="cambiarFotoBtn">
       Cambiar foto de perfil 
     </vaadin-button>
-    <vaadin-text-field placeholder="Nombre..." width-full :center></vaadin-text-field>
-    <vaadin-text-field placeholder="Apellidos..." width-full :center></vaadin-text-field>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e75b" style-name="primary" plain-text :center></vaadin-button>
+    <vaadin-text-field placeholder="Nombre..." width-full :center _id="nombreLbl"></vaadin-text-field>
+    <vaadin-text-field placeholder="Apellidos..." width-full :center _id="apellidosLbl"></vaadin-text-field>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e75b" style-name="primary" plain-text :center _id= "confirmarBtn"></vaadin-button>
    </vaadin-vertical-layout>
   </vaadin-vertical-layout>
  </body>

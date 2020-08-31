@@ -25,11 +25,12 @@ public class Ver_usuario_ventana extends VerticalLayout {
 	protected Button back;
 	protected HorizontalLayout barra_perfil_usuario;
 	protected Image imagen_perfil_ajeno;
-	protected Button botonSeguir;
 	protected Label nombre_usuario;
+	protected Label nombre_usuario1;
 	protected Button botonOpciones;
 	protected GridLayout grid_informacionUsuario;
-	protected VerticalLayout publicacionesPerfil;
+	protected Button botonSeguir;
+	protected GridLayout publicacionesPerfil;
 
 	public Ver_usuario_ventana() {
 		Design.read(this);

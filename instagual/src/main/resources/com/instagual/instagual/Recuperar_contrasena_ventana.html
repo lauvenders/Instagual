@@ -7,15 +7,15 @@
  </head>
  <body>
   <vaadin-vertical-layout spacing="false" size-full margin="false">
-   <vaadin-absolute-layout style-name="LoginPricipalLayout" _id="mainLayout">
-    <vaadin-image source="theme://images/logoTexto.jpeg" responsive height="262px" _id="imagenPrincipal"></vaadin-image>
-    <vaadin-vertical-layout spacing="false" responsive height="151px" margin="false" _id="loginVertLayout" :top="249px" :left="0px">
-     <vaadin-text-field caption="Email" responsive width="90%" _id="textFieldEmail" :center></vaadin-text-field>
+   <vaadin-vertical-layout style-name="LoginPricipalLayout" size-full margin="false" _id="mainLayout">
+    <vaadin-image source="theme://images/logoTexto.jpeg" responsive height-full _id="imagenPrincipal" :center></vaadin-image>
+    <vaadin-vertical-layout spacing="false" responsive height="151px" margin="false" _id="emailVertLayout">
+     <vaadin-text-field responsive placeholder="Email" width="90%" _id="textFieldEmail" :center></vaadin-text-field>
+     <vaadin-button plain-text _id="recuperarBtn" :center>
+       Recuperar contraseña 
+     </vaadin-button>
     </vaadin-vertical-layout>
-    <vaadin-native-button plain-text :top="519px" :left="365px">
-      Recuperar 
-    </vaadin-native-button>
-   </vaadin-absolute-layout>
+   </vaadin-vertical-layout>
   </vaadin-vertical-layout>
  </body>
 </html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;instagual_style&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" margin="false">
+   <vaadin-horizontal-layout spacing="false" size-full _id="notificarComentarioLayout">
+    <vaadin-horizontal-layout style-name="card" width-full height="120px">
+     <vaadin-absolute-layout style-name="card" width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="100px" height="100px" _id="fotoUsuarioComentario" :middle></vaadin-image>
+     <vaadin-horizontal-layout :middle :expand>
+      <vaadin-button primary-style-name="v-label-bold" plain-text _id="usuarioComentario" :middle>
+        @usuario 
+      </vaadin-button>
+      <vaadin-label plain-text :middle>
+        ha comentado 
+      </vaadin-label>
+      <vaadin-label plain-text _id="comentarioLbl" :middle>
+        comentario 
+      </vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-image source="theme://images/ejemplo.jpeg" height="100px" _id="publicacionComentario" :middle></vaadin-image>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout spacing="false" size-full _id="notificarSeguidorLayout">
+    <vaadin-horizontal-layout style-name="card" width-full height="120px">
+     <vaadin-absolute-layout style-name="card" width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="100px" height="100px" _id="fotoUsuarioSeguidor" :middle></vaadin-image>
+     <vaadin-horizontal-layout :middle :expand>
+      <vaadin-button primary-style-name="v-label-bold" plain-text _id="usuarioSeguidor" :middle>
+        @usuario 
+      </vaadin-button>
+      <vaadin-label plain-text :middle>
+        ha comenzado a seguirte 
+      </vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout spacing="false" size-full _id="notificarMeGustaLayout">
+    <vaadin-horizontal-layout style-name="card" width-full height="120px">
+     <vaadin-absolute-layout style-name="card" width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="100px" height="100px" _id="fotoUsuarioMeGusta" :middle></vaadin-image>
+     <vaadin-horizontal-layout :middle :expand>
+      <vaadin-label plain-text :middle>
+        A 
+      </vaadin-label>
+      <vaadin-button primary-style-name="v-label-bold" plain-text _id="usuarioMeGusta" :middle>
+        @usuario 
+      </vaadin-button>
+      <vaadin-label plain-text :middle>
+        le ha gustado tu publicación 
+      </vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-image source="theme://images/ejemplo.jpeg" height="100px" _id="publicacionMeGusta" :middle></vaadin-image>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout spacing="false" size-full _id="solicitarSeguirLayout">
+    <vaadin-horizontal-layout style-name="card" width-full height="120px">
+     <vaadin-absolute-layout style-name="card" width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="100px" height="100px" _id="fotoUsuarioSolicitud" :middle></vaadin-image>
+     <vaadin-horizontal-layout :middle :expand>
+      <vaadin-button primary-style-name="v-label-bold" plain-text _id="usuarioSolicitud" :middle>
+        @usuario 
+      </vaadin-button>
+      <vaadin-label plain-text :middle>
+        ha solicitado seguirte 
+      </vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-horizontal-layout spacing="false" :middle :right>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e75b" primary-style-name="" style-name="primary" plain-text _id="confirmarSeguidorBtn"></vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7ad" style-name="borderless" plain-text _id="denegarSeguidorBtn"></vaadin-button>
+     </vaadin-horizontal-layout>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-horizontal-layout>
+   <vaadin-horizontal-layout spacing="false" size-full _id="notificarEtiquetaLayout">
+    <vaadin-horizontal-layout style-name="card" width-full height="120px">
+     <vaadin-absolute-layout style-name="card" width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="100px" height="100px" _id="fotoUsuarioEtiqueta" :middle></vaadin-image>
+     <vaadin-horizontal-layout :middle :expand>
+      <vaadin-button primary-style-name="v-label-bold" plain-text _id="usuarioEtiqueta" :middle>
+        @usuario 
+      </vaadin-button>
+      <vaadin-label plain-text :middle>
+        te ha etiquetado en una publicación 
+      </vaadin-label>
+     </vaadin-horizontal-layout>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+     <vaadin-image source="theme://images/ejemplo.jpeg" height="100px" _id="publicacionEtiqueta" :middle></vaadin-image>
+     <vaadin-absolute-layout width="1px" height="1px"></vaadin-absolute-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-horizontal-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

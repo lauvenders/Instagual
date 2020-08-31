@@ -22,7 +22,12 @@ import user_interface.Iniciar_sesion;
 @Theme("instagual_style")
 public class instagual extends UI {
 
-    @Override
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Override
     protected void init(VaadinRequest vaadinRequest) {
     	Iniciar_sesion ventanaInicio = new Iniciar_sesion();
         final VerticalLayout layout = new VerticalLayout();
@@ -49,5 +54,6 @@ public class instagual extends UI {
     @WebServlet(urlPatterns = "/*", name = "instagualServlet", asyncSupported = true)
     @VaadinServletConfiguration(ui = instagual.class, productionMode = false)
     public static class instagualServlet extends VaadinServlet {
+    	private static final long serialVersionUID = 1L;
     }
 }

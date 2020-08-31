@@ -8,19 +8,13 @@
  <body>
   <vaadin-vertical-layout spacing="false" margin="false">
    <vaadin-vertical-layout spacing="false" margin="false">
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" spacing="false" width-full height="50px" _id="usuarioPublicacion" :expand="0.4">
-      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
-      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil" :middle :center></vaadin-image>
-      <vaadin-link caption="@usuario" width-full :middle :center :expand></vaadin-link>
-     </vaadin-horizontal-layout>
-     <vaadin-button icon="fonticon://Vaadin-Icons/e929" style-name="borderless huge icon-only" height-full plain-text _id="botonAñadir" :middle :right></vaadin-button>
-     <vaadin-button icon="fonticon://Vaadin-Icons/e762" style-name="borderless huge icon-only" height-full plain-text _id="botonPublicar" :middle :right></vaadin-button>
-    </vaadin-horizontal-layout>
-    <vaadin-vertical-layout spacing="false" size-full margin="false" _id="tabSheetContainer">
-     <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet">
+    <vaadin-button size-full plain-text _id="botonAñadir" :center>
+      Seleccionar archivos 
+    </vaadin-button>
+    <vaadin-vertical-layout spacing="false" margin="false" _id="tabSheetContainer">
+     <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar tiny" responsive _id="tabSheet">
       <tab icon="fonticon://Vaadin-Icons/e75c" selected>
-       <vaadin-image source="theme://images/ejemplo.jpeg" width-full height="320px" _id="imagen"></vaadin-image>
+       <vaadin-image source="theme://images/ejemplo.jpeg" size-full _id="imagen"></vaadin-image>
       </tab>
       <tab icon="fonticon://Vaadin-Icons/e75c">
        <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
@@ -32,7 +26,19 @@
       </tab>
      </vaadin-tab-sheet>
     </vaadin-vertical-layout>
-    <vaadin-text-area placeholder="Introduce descripcion" width-full _id="descripcionAreaSubir"></vaadin-text-area>
+    <vaadin-text-area style-name="borderless" placeholder="Descripción..." width-full _id="descripcionAreaSubir"></vaadin-text-area>
+    <vaadin-horizontal-layout>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e624" style-name="borderless-colored" plain-text _id="mencionBtn">
+       Mención 
+     </vaadin-button>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e6a9" style-name="borderless-colored" plain-text _id="hashtagBtn">
+       Hashtag 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+    <vaadin-absolute-layout size-auto></vaadin-absolute-layout>
+    <vaadin-button enabled="false" style-name="primary" width="60%" height-full plain-text _id="botonPublicar" :bottom :center>
+      Confirmar 
+    </vaadin-button>
    </vaadin-vertical-layout>
   </vaadin-vertical-layout>
  </body>

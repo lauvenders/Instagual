@@ -6,63 +6,88 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout spacing="false" responsive margin="false">
-   <vaadin-vertical-layout responsive size-full margin="false" _id="mainLayout">
-    <vaadin-horizontal-layout style-name="barraUsuario" spacing="false" responsive _id="barra_perfil_usuario1">
-     <vaadin-vertical-layout spacing="false" size-full margin="false">
-      <vaadin-image source="theme://images/user.png" id="imagen-barra-usuario" width="100px" _id="imagen_perfil_ajeno1"></vaadin-image>
-     </vaadin-vertical-layout>
+  <vaadin-vertical-layout spacing="false" size-full margin="false">
+   <vaadin-vertical-layout spacing="false" responsive margin="false" _id="mainLayout">
+    <vaadin-absolute-layout size-auto></vaadin-absolute-layout>
+    <vaadin-horizontal-layout style-name="barraUsuario" responsive margin _id="contentLayout" :center>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" id="imagen-barra-usuario" width="110px" height="110px" _id="imagen_perfil_ajeno1"></vaadin-image>
      <vaadin-vertical-layout spacing="false" size-full margin="false">
       <vaadin-horizontal-layout spacing="false" width-full :middle>
-       <vaadin-label width-full height="50%" plain-text _id="nombre_usuario1" :expand="0.1">
-         Usuario Usuario 
-       </vaadin-label>
-       <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e764" style-name="borderless huge icon-only" width="37px" height="35px" plain-text _id="optionButton" :middle :right></vaadin-button>
-       <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e6f7" style-name="borderless huge icon-only" width="37px" height="35px" plain-text _id="blockButton"></vaadin-button>
+       <vaadin-vertical-layout spacing="false" size-auto margin="false" :expand="0.1">
+        <vaadin-label primary-style-name="v-label v-label-bold" width-full plain-text _id="nombre_usuario2">
+          Usuario Usuario 
+        </vaadin-label>
+        <vaadin-label width-full plain-text _id="nombre_usuario11" :bottom>
+          @usuario 
+        </vaadin-label>
+       </vaadin-vertical-layout>
+       <vaadin-absolute-layout size-auto></vaadin-absolute-layout>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e7d3" style-name="borderless huge icon-only" width="37px" height="35px" plain-text _id="botonOpciones"></vaadin-button>
       </vaadin-horizontal-layout>
+      <vaadin-absolute-layout size-auto></vaadin-absolute-layout>
       <vaadin-horizontal-layout spacing="false">
-       <vaadin-grid-layout spacing responsive id="grid_informacionUsuario" _id="grid_informacionUsuario1" :expand="2">
+       <vaadin-grid-layout responsive id="grid_informacionUsuario" _id="grid_informacionUsuario1" :expand="2">
         <row>
          <column>
-          <vaadin-label plain-text :center>
+          <vaadin-label primary-style-name="v-label-bold v-label-large" plain-text _id="numPublicaciones" :center>
             45 
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label plain-text _id="nSeguidoresLb" :center>
+          <vaadin-button primary-style-name="v-label-bold v-label-large" plain-text _id="numSeguidores" :center>
             150 
-          </vaadin-label>
+          </vaadin-button>
          </column>
          <column>
-          <vaadin-label plain-text _id="nSiguiendoLb" :center>
+          <vaadin-button primary-style-name="v-label-bold v-label-large" plain-text _id="numSeguidos" :center>
             124 
-          </vaadin-label>
+          </vaadin-button>
          </column>
         </row>
         <row>
          <column>
-          <vaadin-label plain-text>
-            publicaciones 
+          <vaadin-label primary-style-name="v-label v-label-align-center" width="100px" height="25px" plain-text>
+            Publicaciones 
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label responsive plain-text>
-            seguidores 
+          <vaadin-label primary-style-name="v-label v-label-align-center" responsive width="100px" plain-text :middle :center>
+            Seguidores 
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label plain-text>
+          <vaadin-label primary-style-name="v-label v-label-align-center" width="100px" plain-text>
             Siguiendo 
           </vaadin-label>
          </column>
         </row>
+        <row></row>
        </vaadin-grid-layout>
       </vaadin-horizontal-layout>
      </vaadin-vertical-layout>
     </vaadin-horizontal-layout>
-    <vaadin-vertical-layout spacing="false" margin="false" _id="contentLayout"></vaadin-vertical-layout>
-    <vaadin-vertical-layout height="20px"></vaadin-vertical-layout>
+    <vaadin-vertical-layout spacing="false" margin="false" _id="seguirLayout">
+     <vaadin-absolute-layout width-auto height="40px"></vaadin-absolute-layout>
+     <vaadin-button style-name="small primary" width="90%" plain-text _id="seguirBtn" :middle :center>
+       Seguir 
+     </vaadin-button>
+     <vaadin-absolute-layout width-auto height="20px"></vaadin-absolute-layout>
+    </vaadin-vertical-layout>
    </vaadin-vertical-layout>
+   <vaadin-absolute-layout height="70px" _id="busquedaLayout">
+    <vaadin-horizontal-layout style-name="card" width-full height="70px" _id="contentLayout1">
+     <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="60px" height="60px" _id="fotoPerfil" :middle :center></vaadin-image>
+     <vaadin-vertical-layout spacing="false" margin="false" :middle :center :expand>
+      <vaadin-label plain-text _id="nombreUsuario">
+        Nombre Apellidos 
+      </vaadin-label>
+      <vaadin-label style-name="small" plain-text _id="usuarioLbl">
+        @usuario 
+      </vaadin-label>
+     </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-absolute-layout>
   </vaadin-vertical-layout>
  </body>
 </html>

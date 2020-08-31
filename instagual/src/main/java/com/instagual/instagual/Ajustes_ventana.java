@@ -20,7 +20,6 @@ import com.vaadin.ui.declarative.Design;
 @SuppressWarnings("serial")
 public class Ajustes_ventana extends VerticalLayout {
 	protected VerticalLayout ajustesMain;
-	protected Button back;
 	protected Button modificar_perfil;
 	protected Button eliminar_cuenta;
 	protected Slider notificar_me_gusta;

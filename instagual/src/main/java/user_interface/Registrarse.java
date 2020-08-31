@@ -1,16 +1,44 @@
 package user_interface;
 
-public class Registrarse {
-	/*private event _registro;
-	private TextField _correoTF;
-	private TextField _claveTF;
-	private Label _mayorEdad;
-	private CheckBox _mayorEdadCB;
-	public Usuario_Sin_Registrar _usuario_Sin_Registrar;
-	public Enviar_correo_de_confirmacion _enviar_correo_de_confirmacion;*/
+import com.instagual.instagual.Registrarse_ventana;
+import com.vaadin.data.HasValue.ValueChangeEvent;
+import com.vaadin.ui.CheckBox;
+import com.vaadin.ui.NativeButton;
+import com.vaadin.ui.Button.ClickEvent;
+
+public class Registrarse extends Registrarse_ventana {
+	
+	public Registrarse() {
+		check16.addValueChangeListener(new CheckBox.ValueChangeListener<Boolean>() {
+
+			@Override
+			public void valueChange(ValueChangeEvent event) {
+				if (check16.getValue() == true || textFieldEmail.getValue() == null 
+						|| textFieldContrasena.getValue() == null) {
+					registrarseBtn.setEnabled(true);
+				} else {
+					registrarseBtn.setEnabled(false);
+				}
+			}
+		});
+		
+		registrarseBtn.addClickListener(new NativeButton.ClickListener() {
+			
+			private static final long serialVersionUID = 1L;
+
+			public void buttonClick(ClickEvent event) {
+				Registro();
+			}
+		});
+	}
 
 	public void Registro() {
-		throw new UnsupportedOperationException();
+		// TODO: Registro en BD
+		imagenPrincipal.setVisible(false);
+		loginVertLayout.setVisible(false);
+		botonesLayout.setVisible(false);
+		mainLayout.addComponent(new Iniciar_sesion());
+		EnviarCorreoConfirmacion();
 	}
 
 	public void EnviarCorreoConfirmacion() {

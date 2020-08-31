@@ -6,44 +6,31 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-vertical-layout spacing="false" size-full margin="false">
-   <vaadin-vertical-layout style-name="publicaciones_perfil" spacing="false" margin="false" _id="publicacionesPerfil">
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-image source="theme://images/637668.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout spacing="false" width-full>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-    </vaadin-horizontal-layout>
-   </vaadin-vertical-layout>
+  <vaadin-vertical-layout _id="mainLayout" spacing="false" size-full margin="false" >
+        <vaadin-grid-layout width-full _id="publicacionesPerfil" style-name="gridBorder">
+            <row>
+                <column>
+                    <vaadin-image source="theme://images/ejemplo.jpeg" width-full :middle :center style-name="gridBorder"></vaadin-image>
+                </column>
+                <column>
+                    <vaadin-image source="theme://images/ejemplo.jpeg" width-full :middle :center></vaadin-image>
+                </column>
+                <column>
+                    <vaadin-image source="theme://images/ejemplo.jpeg" width-full :middle :center></vaadin-image>
+                </column>
+            </row>
+            <row>
+                <column>
+                    <vaadin-image source="theme://images/ejemplo.jpeg" width-full :middle :center></vaadin-image>
+                </column>
+                <column>
+                    <vaadin-image source="theme://images/ejemplo.jpeg" width-full :middle :center></vaadin-image>
+                </column>
+                <column>
+                    <vaadin-image source="theme://images/ejemplo.jpeg" width-full :middle :center></vaadin-image>
+                </column>
+            </row>
+        </vaadin-grid-layout>
   </vaadin-vertical-layout>
  </body>
 </html>

@@ -32,6 +32,7 @@ public class Subir_publicacion extends Subir_publicacion_ventana {
     ImageUploader receiver = new ImageUploader();
   
 	TabSheet tabsheet;
+	
 	public Subir_publicacion() {
 		  tabSheetContainer.removeAllComponents();
 		  tabsheet = new TabSheet();
@@ -41,14 +42,28 @@ public class Subir_publicacion extends Subir_publicacion_ventana {
 				addElement();
 			}
 		});
+		
+		this.botonPublicar.addClickListener(new Button.ClickListener() {
+			
+			@Override
+			public void buttonClick(ClickEvent event) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		this.hashtagBtn.addClickListener(e -> {
+			this.descripcionAreaSubir.setValue(this.descripcionAreaSubir.getValue() + "#");
+		});
+		
+		this.mencionBtn.addClickListener(e -> {
+			this.descripcionAreaSubir.setValue(this.descripcionAreaSubir.getValue() + "@");
+		});
 	}
 	
 
 	public void addElement() {
 		// Show uploaded file in this placeholder
-		
-		
-		
 
 		// Create the upload with a caption and set receiver later
 		Upload upload = new Upload("Upload Image Here", receiver);
@@ -56,7 +71,7 @@ public class Subir_publicacion extends Subir_publicacion_ventana {
 		upload.addSucceededListener(receiver);
 
 		// Put the components in a panel
-		Panel panel = new Panel("Cool Image Storage");
+		Panel panel = new Panel("Subir Imágenes");
 		Layout panelContent = new VerticalLayout();
 		panelContent.addComponents(upload,image);
 		panel.setContent(panelContent);

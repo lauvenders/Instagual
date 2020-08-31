@@ -4,6 +4,7 @@ import java.util.Vector;
 
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Component;
 
 import user_interface.Publicacion;
 import user_interface.Publicacion_etiquetada;
@@ -12,7 +13,7 @@ public class Ver_listado_de_publicaciones extends Listado_de_publicaciones_popul
 	public Usuario _usuario;
 	public Vector<Publicacion> _list_Publicacion = new Vector<Publicacion>();
 	public Vector<Publicacion_etiquetada> _list_Publicacion_etiquetada = new Vector<Publicacion_etiquetada>();
-	public Ver_usuario_propio userProfile = new Ver_usuario_propio();
+	public Ver_usuario_propio userProfile = new Ver_usuario_propio(this);
 	public Ver_listado_de_publicaciones() {
 		inicializar();
 		btnProfile.addClickListener(new Button.ClickListener() {
@@ -41,6 +42,15 @@ public class Ver_listado_de_publicaciones extends Listado_de_publicaciones_popul
 				userUpload();
 			}
 		});
+		
+		this.btnHome.addClickListener(new Button.ClickListener() {
+			
+			@Override
+			public void buttonClick(ClickEvent event) {
+				inicializar();
+				
+			}
+		});
 	}
 	
 	
@@ -52,15 +62,23 @@ public class Ver_listado_de_publicaciones extends Listado_de_publicaciones_popul
 		}
 	
 	}
+	
+	public void clear() {
+		listaPublicaciones.removeAllComponents();
+	}
+	
+	public void mainLayoutAddComponent(Component c) {
+		listaPublicaciones.addComponent(c);
+	}
+	
 	public void userProfile() {
-		//listaPublicaciones.setVisible(false);
 		contentLayout.removeAllComponents();
 		contentLayout.addComponent(userProfile);
 	}
 	
 	public void datosPrueba() {
 		for(int i = 0 ;i<5;i++) {
-			_list_Publicacion.add(new Publicacion());
+			_list_Publicacion.add(new Publicacion(this, null));
 		}
 	}
 	
@@ -78,4 +96,9 @@ public class Ver_listado_de_publicaciones extends Listado_de_publicaciones_popul
 		contentLayout.removeAllComponents();
 		contentLayout.addComponent(new Subir_publicacion());
 	}
+	
+	public Button getBtnProfile () {
+		return this.btnProfile;
+	}
+
 }

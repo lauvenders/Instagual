@@ -15307,3 +15307,17 @@ div.v-layout.v-horizontal.v-widget {
 	background-color: #2772b6 !important;
 	margin-left: 5px;
 }
+
+.instagual_style .gridBorder {
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+.instagual_style #siguiendo {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2772b6;
+	background-color: white;
+	color: #2772b6;
+}

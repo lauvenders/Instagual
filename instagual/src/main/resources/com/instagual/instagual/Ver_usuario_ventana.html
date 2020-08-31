@@ -12,112 +12,102 @@
     <vaadin-image source="theme://images/logoTexto.jpeg" width="87px" height-full :middle></vaadin-image>
     <vaadin-absolute-layout :expand></vaadin-absolute-layout>
    </vaadin-horizontal-layout>
-   <vaadin-vertical-layout responsive size-full margin="false">
-    <vaadin-horizontal-layout style-name="barraUsuario" spacing="false" responsive _id="barra_perfil_usuario">
-     <vaadin-vertical-layout spacing="false" size-full margin="false">
-      <vaadin-image source="theme://images/user.png" id="imagen-barra-usuario" width="100px" _id="imagen_perfil_ajeno"></vaadin-image>
-      <vaadin-button style-name="botonSeguir primary" plain-text _id="botonSeguir">
-        Seguir 
-      </vaadin-button>
-     </vaadin-vertical-layout>
+   <vaadin-vertical-layout responsive margin="false">
+    <vaadin-absolute-layout width="0px" height="0px"></vaadin-absolute-layout>
+    <vaadin-horizontal-layout style-name="barraUsuario" responsive margin _id="barra_perfil_usuario" :middle :center>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" id="imagen-barra-usuario" width="110px" height="110px" _id="imagen_perfil_ajeno"></vaadin-image>
      <vaadin-vertical-layout spacing="false" size-full margin="false">
       <vaadin-horizontal-layout spacing="false" width-full :middle>
-       <vaadin-label width-full height="50%" plain-text _id="nombre_usuario" :expand="0.1">
-         Usuario Usuario 
-       </vaadin-label>
-       <vaadin-button icon="fonticon://Vaadin-Icons/e61c" style-name="borderless huge icon-only" width="37px" height="35px" plain-text _id="botonOpciones" :middle :right></vaadin-button>
+       <vaadin-vertical-layout size-full margin="false" :expand="0.1">
+        <vaadin-label primary-style-name="v-label v-label-bold" width-full plain-text _id="nombre_usuario">
+          Usuario Usuario 
+        </vaadin-label>
+        <vaadin-label width-full plain-text _id="nombre_usuario1">
+          @usuario 
+        </vaadin-label>
+       </vaadin-vertical-layout>
+       <vaadin-absolute-layout size-auto></vaadin-absolute-layout>
+       <vaadin-button icon="fonticon://Vaadin-Icons/e7d3" style-name="borderless huge icon-only" width="37px" height="35px" plain-text _id="botonOpciones"></vaadin-button>
       </vaadin-horizontal-layout>
+      <vaadin-absolute-layout size-auto></vaadin-absolute-layout>
       <vaadin-horizontal-layout spacing="false">
-       <vaadin-grid-layout spacing responsive id="grid_informacionUsuario" _id="grid_informacionUsuario" :expand="2">
+       <vaadin-grid-layout responsive id="grid_informacionUsuario" _id="grid_informacionUsuario" :expand="2">
         <row>
          <column>
-          <vaadin-label plain-text :center>
+          <vaadin-label primary-style-name="v-label-bold v-label-large" plain-text :center>
             45 
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label plain-text :center>
+          <vaadin-label primary-style-name="v-label-bold v-label-large" plain-text :center>
             150 
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label plain-text :center>
+          <vaadin-label primary-style-name="v-label-bold v-label-large" plain-text :center>
             124 
           </vaadin-label>
          </column>
         </row>
         <row>
          <column>
-          <vaadin-label plain-text>
-            publicaciones 
+          <vaadin-label primary-style-name="v-label v-label-align-center" width="100px" height="25px" plain-text>
+            Publicaciones 
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label responsive plain-text>
-            seguidores 
+          <vaadin-label primary-style-name="v-label v-label-align-center" responsive width="100px" plain-text :middle :center>
+            Seguidores 
           </vaadin-label>
          </column>
          <column>
-          <vaadin-label plain-text>
+          <vaadin-label primary-style-name="v-label v-label-align-center" width="100px" plain-text>
             Siguiendo 
           </vaadin-label>
          </column>
         </row>
        </vaadin-grid-layout>
       </vaadin-horizontal-layout>
+      <vaadin-absolute-layout width="0px" height="0px"></vaadin-absolute-layout>
      </vaadin-vertical-layout>
     </vaadin-horizontal-layout>
-    <vaadin-vertical-layout style-name="publicaciones_perfil" spacing="false" margin="false" _id="publicacionesPerfil">
-     <vaadin-horizontal-layout spacing="false" width-full>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </vaadin-horizontal-layout>
-     <vaadin-horizontal-layout spacing="false" width-full>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </vaadin-horizontal-layout>
-     <vaadin-horizontal-layout spacing="false" width-full>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </vaadin-horizontal-layout>
-     <vaadin-horizontal-layout spacing="false" width-full>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </vaadin-horizontal-layout>
-     <vaadin-horizontal-layout spacing="false" width-full>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </vaadin-horizontal-layout>
-     <vaadin-horizontal-layout spacing="false" width-full>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </vaadin-horizontal-layout>
-     <vaadin-horizontal-layout spacing="false" width-full>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </vaadin-horizontal-layout>
-     <vaadin-horizontal-layout spacing="false" width-full>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-      <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
-     </vaadin-horizontal-layout>
-    </vaadin-vertical-layout>
+    <vaadin-button width="80%" height="30px" plain-text _id="botonSeguir" :center>
+      Seguir 
+    </vaadin-button>
+    <vaadin-grid-layout primary-style-name="v-gridlayout-spacing-on" spacing width="99%" _id="publicacionesPerfil" :middle>
+     <row>
+      <column>
+       <vaadin-image source="theme://images/ejemplo.jpeg" width-full :middle :center></vaadin-image>
+      </column>
+      <column>
+       <vaadin-image source="theme://images/ejemplo2.jpg" width-full :middle :center></vaadin-image>
+      </column>
+      <column>
+       <vaadin-image source="theme://images/ejemplo2.jpg" width-full :middle :center></vaadin-image>
+      </column>
+     </row>
+     <row>
+      <column>
+       <vaadin-image source="theme://images/ejemplo.jpeg" width-full></vaadin-image>
+      </column>
+      <column>
+       <vaadin-image source="theme://images/ejemplo.jpeg" width-full></vaadin-image>
+      </column>
+      <column>
+       <vaadin-image source="theme://images/ejemplo.jpeg" width-full></vaadin-image>
+      </column>
+     </row>
+     <row></row>
+     <row></row>
+     <row></row>
+     <row></row>
+     <row></row>
+     <row></row>
+     <row></row>
+     <row></row>
+     <row></row>
+    </vaadin-grid-layout>
    </vaadin-vertical-layout>
-   <vaadin-horizontal-layout primary-style-name="barraHerramientas" spacing="false" responsive id="barra_herramientas" width-full height="50px">
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7ec" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e805" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e7fe" style-name="borderless icon-only huge" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-button icon="fonticon://Vaadin-Icons/e617" style-name="borderless huge icon-only" size-full plain-text :expand></vaadin-button>
-    <vaadin-vertical-layout></vaadin-vertical-layout>
-   </vaadin-horizontal-layout>
   </vaadin-vertical-layout>
  </body>
 </html>

@@ -26,23 +26,15 @@ public class Ver_usuario_propio_ventana extends VerticalLayout {
 	protected HorizontalLayout barra_perfil_usuario;
 	protected Image imagen_perfil_ajeno;
 	protected Label nombre_usuario;
-	protected Button optionButton;
+	protected Label nombre_usuario1;
+	protected Button botonOpciones;
 	protected GridLayout grid_informacionUsuario;
-	protected VerticalLayout publicacionesPerfil;
-	protected VerticalLayout publicacionesEtiquetadas;
+	protected Label numPublicaciones;
+	protected Label numSeguidores;
+	protected Label numSeguidos;
+	protected GridLayout publicacionesPerfil2;
+	protected GridLayout publicacionesPerfil;
 	protected VerticalLayout publicacionesActividad;
-	protected VerticalLayout actividadContent;
-	protected HorizontalLayout actividad;
-	protected VerticalLayout actividadContent1;
-	protected HorizontalLayout actividad1;
-	protected VerticalLayout actividadContent2;
-	protected HorizontalLayout actividad2;
-	protected VerticalLayout actividadContent3;
-	protected HorizontalLayout actividad3;
-	protected VerticalLayout actividadContent4;
-	protected HorizontalLayout actividad4;
-	protected VerticalLayout actividadContent5;
-	protected HorizontalLayout actividad5;
 
 	public Ver_usuario_propio_ventana() {
 		Design.read(this);

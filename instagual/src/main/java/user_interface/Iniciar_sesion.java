@@ -2,6 +2,8 @@ package user_interface;
 import com.instagual.instagual.*;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Component;
+
 import user_interface.*;
 
 public class Iniciar_sesion extends Iniciar_sesion_ventana {
@@ -35,14 +37,25 @@ public class Iniciar_sesion extends Iniciar_sesion_ventana {
 			}
 		});
 		
+		btnRegistrar.addClickListener(new Button.ClickListener() {
+			
+			@Override
+			public void buttonClick(ClickEvent event) {
+
+				Registrar();
+				
+			}
+		});
+		
 		
 	}
 	
 	void iniciarSesionInv() {
 		imagenPrincipal.setVisible(false);
 		loginVertLayout.setVisible(false);
-		horizontalBotones.setVisible(false);
 		mainLayout.removeStyleName("LoginPricipalLayout");
+		dataLayout.setVisible(false);
+		botonesLayout.setVisible(false);
 		buscarInvitado.setVisible(false);
 		listadoPublicacionesInv.setVisible(true);		
 		//buttonIniciarSesion.addComponent();
@@ -51,15 +64,26 @@ public class Iniciar_sesion extends Iniciar_sesion_ventana {
 	void iniciarSesion() {
 		imagenPrincipal.setVisible(false);
 		loginVertLayout.setVisible(false);
-		horizontalBotones.setVisible(false);
 		mainLayout.removeStyleName("LoginPricipalLayout");
+		dataLayout.setVisible(false);
+		botonesLayout.setVisible(false);
 		listadoPublicaciones.setVisible(true);
 	}
-	public void RecuperarPass() {
+	void RecuperarPass() {
 		imagenPrincipal.setVisible(false);
 		loginVertLayout.setVisible(false);
-		horizontalBotones.setVisible(false);
 		mainLayout.removeStyleName("LoginPricipalLayout");
+		dataLayout.setVisible(false);
+		botonesLayout.setVisible(false);
 		mainLayout.addComponent(new Recuperar_contrasena());
+	}
+	
+	void Registrar() {
+		imagenPrincipal.setVisible(false);
+		loginVertLayout.setVisible(false);
+		mainLayout.removeStyleName("LoginPricipalLayout");
+		dataLayout.setVisible(false);
+		botonesLayout.setVisible(false);
+		mainLayout.addComponent(new Registrarse());
 	}
 }

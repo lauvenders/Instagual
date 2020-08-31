@@ -1,11 +1,12 @@
 package user_interface;
 
-public class Notificaciones {
+public class Notificaciones extends Ajustes {
+	public Notificaciones(Ver_usuario_propio ver_usuario_propio) {
+		super(ver_usuario_propio);
+		// TODO Auto-generated constructor stub
+	}
+
 	public Ajustes _ajustes;
-	/*private event _notificar_me_gusta;
-	private event _notificar_comentario;
-	private event _notificar_seguimiento;
-	private event _notificar_solicitud;*/
 	
 	public void Notificar_me_gusta() {
 		throw new UnsupportedOperationException();

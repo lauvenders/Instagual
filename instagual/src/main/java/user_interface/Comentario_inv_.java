@@ -8,10 +8,10 @@ public class Comentario_inv_ extends Comentario_inv_ventana {
 	Comentario_inv_(String usuario,String texto){
 		this.texto = texto;
 		this.eliminarComentarioButton.setVisible(false);
-		this.textoComentario.setValue(usuario+": "+texto);
+		// this.textoComentario.setValue(usuario+": "+texto);
 	}
 	Comentario_inv_(){
 		this.eliminarComentarioButton.setVisible(false);
-		this.textoComentario.setValue(" ");
+		// this.textoComentario.setValue(" ");
 	}
 }

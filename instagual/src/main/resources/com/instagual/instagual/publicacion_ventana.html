@@ -7,17 +7,17 @@
  </head>
  <body>
   <vaadin-vertical-layout spacing="false" margin="false">
-   <vaadin-vertical-layout style-name="publicacionLyPrincipal" spacing="false" responsive size-full margin="false">
+   <vaadin-vertical-layout style-name="publicacionLyPrincipal" spacing="false" responsive size-full margin="false" _id="mainLayout">
     <vaadin-horizontal-layout primary-style-name="vertical_layout" style-name="light" width-full height="50px" _id="usuarioPublicacion">
      <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
      <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="45px" height="45px" _id="fotoPerfil" :middle :center></vaadin-image>
-     <vaadin-button primary-style-name="v-link" width-full plain-text _id="linkUsuario" :middle :center :expand>
+     <vaadin-button primary-style-name="v-label" width-full plain-text _id="linkUsuario" :middle :center :expand>
        usuario 
      </vaadin-button>
     </vaadin-horizontal-layout>
     <vaadin-tab-sheet style-name="equal-width-tabs compact-tabbar centered-tabs padded-tabbar" responsive size-full _id="tabSheet">
      <tab icon="fonticon://Vaadin-Icons/e75c" selected>
-      <vaadin-image source="theme://images/637668.jpg" size-full _id="imagen"></vaadin-image>
+      <vaadin-image source="theme://images/ejemplo.jpeg" size-full _id="imagen"></vaadin-image>
      </tab>
      <tab icon="fonticon://Vaadin-Icons/e75c">
       <vaadin-image source="theme://images/ejemplo2.jpg" size-full></vaadin-image>
@@ -28,50 +28,25 @@
       </vaadin-video>
      </tab>
     </vaadin-tab-sheet>
-    <vaadin-horizontal-layout spacing="false" width-full height="50px" _id="lyAcciones">
-     <vaadin-absolute-layout responsive :expand>
-      <vaadin-button icon="fonticon://Vaadin-Icons/e77f" style-name="borderless icon-only huge" size-full plain-text _id="me_gusta"></vaadin-button>
-     </vaadin-absolute-layout>
-     <vaadin-absolute-layout :expand>
-      <vaadin-button icon="fonticon://Vaadin-Icons/e765" style-name="borderless huge icon-only" size-full plain-text _id="comentar"></vaadin-button>
-     </vaadin-absolute-layout>
-     <vaadin-absolute-layout :expand>
-      <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e6d6" style-name="borderless huge icon-only" size-full plain-text _id="eliminarEtiqueta">
-        Button 
-      </vaadin-button>
-      <vaadin-button visible="false" icon="fonticon://Vaadin-Icons/e80b" style-name="borderless huge icon-only" size-full plain-text _id="eliminarPublicacion">
-        Button 
-      </vaadin-button>
-     </vaadin-absolute-layout>
-     <vaadin-absolute-layout :expand></vaadin-absolute-layout>
-     <vaadin-absolute-layout :expand>
-      <vaadin-button icon="fonticon://Vaadin-Icons/e76c" style-name="borderless icon-only huge" size-full plain-text _id="compartir"></vaadin-button>
-     </vaadin-absolute-layout>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout spacing="false" responsive width-full height="25px">
-     <vaadin-horizontal-layout size-full>
-      <vaadin-absolute-layout width="0px"></vaadin-absolute-layout>
-      <vaadin-label icon="fonticon://Vaadin-Icons/e780" height-full plain-text></vaadin-label>
-      <vaadin-label style-name="tiny" size-full plain-text :expand>
-        A x usuarios les gusta esto 
-      </vaadin-label>
-     </vaadin-horizontal-layout>
-    </vaadin-horizontal-layout>
-    <vaadin-horizontal-layout responsive width-full>
-     <vaadin-absolute-layout width="0px" height-auto></vaadin-absolute-layout>
-     <vaadin-label style-name="bold small" height-full plain-text>
-       @usuario 
-     </vaadin-label>
-     <vaadin-label style-name="small" width-full plain-text :expand>
-       Descripción hola que tal me llamo laura hola que tal hola hola que tal hola 
-     </vaadin-label>
-    </vaadin-horizontal-layout>
-    <vaadin-vertical-layout spacing="false" height="30px" margin="false">
-     <vaadin-button style-name="borderless small" height-full plain-text>
-       Ver comentarios 
-     </vaadin-button>
-    </vaadin-vertical-layout>
    </vaadin-vertical-layout>
+   <!doctype html>
+<html>
+    <head></head>
+    <body>
+        <vaadin-horizontal-layout style-name="card" width-full height="70px" _id="publicacionBusquedaLayout">
+            <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
+            <vaadin-image source="theme://images/ejemplo.jpeg" width="60px" height="60px" _id="publicacion2" :middle :center></vaadin-image>
+            <vaadin-vertical-layout spacing="false" margin="false" :middle :center :expand>
+                <vaadin-label plain-text _id="usuarioLbl2">
+                    @usuario
+                </vaadin-label>
+                <vaadin-label _id="descripcionLbl2" style-name="tiny" width-full plain-text>
+                    Descripción descripción descripción descripción descripción descripción
+                </vaadin-label>
+            </vaadin-vertical-layout>
+        </vaadin-horizontal-layout>
+    </body>
+</html>
   </vaadin-vertical-layout>
  </body>
 </html>

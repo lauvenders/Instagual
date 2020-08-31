@@ -9,10 +9,11 @@ public class Listado_de_publicaciones_populares_inv_ extends Listado_de_publicac
 	public Vector<Publicacion> _list_Publicacion = new Vector<Publicacion>();
 	public Invitado _invitado;
 	String tipoUsuario ="invitado";
+	
 	public Listado_de_publicaciones_populares_inv_() {
-		listaPublicaciones.addComponent(new Publicacion_inv_());
-		listaPublicaciones.addComponent(new Publicacion_inv_());
-		listaPublicaciones.addComponent(new Publicacion_inv_());
+		listaPublicaciones.addComponent(new Publicacion_inv_(null, null));
+		listaPublicaciones.addComponent(new Publicacion_inv_(null, null));
+		listaPublicaciones.addComponent(new Publicacion_inv_(null, null));
 		btnHome.addClickListener(new Button.ClickListener() {
 			public void buttonClick(ClickEvent event) {
 				
@@ -32,7 +33,6 @@ public class Listado_de_publicaciones_populares_inv_ extends Listado_de_publicac
 	}
 	
 	public void guestSearch() {
-		contentLayout.removeAllComponents();
 		contentLayout.addComponent( new Buscar__inv_());
 	}
 }

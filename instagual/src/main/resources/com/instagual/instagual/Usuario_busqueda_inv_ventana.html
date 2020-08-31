@@ -6,17 +6,21 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-horizontal-layout style-name="card" width-full height="70px">
-   <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
-   <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="60px" height="60px" _id="fotoPerfil" :middle :center></vaadin-image>
-   <vaadin-vertical-layout spacing="false" margin="false" :middle :center :expand>
-    <vaadin-label plain-text>
-      Nombre Apellidos 
-    </vaadin-label>
-    <vaadin-label style-name="small" plain-text>
-      @usuario 
-    </vaadin-label>
-   </vaadin-vertical-layout>
-  </vaadin-horizontal-layout>
+  <vaadin-absolute-layout>
+   <vaadin-absolute-layout height="70px" _id="mainLayout">
+    <vaadin-horizontal-layout style-name="card" width-full height="70px" _id="contentLayout">
+     <vaadin-absolute-layout width="2px" height-auto></vaadin-absolute-layout>
+     <vaadin-image primary-style-name="imgRedonda" source="theme://images/ejemplo.jpeg" width="60px" height="60px" _id="fotoPerfil" :middle :center></vaadin-image>
+     <vaadin-vertical-layout spacing="false" margin="false" :middle :center :expand>
+      <vaadin-label plain-text _id="nombreUsuario">
+        Nombre Apellidos 
+      </vaadin-label>
+      <vaadin-label style-name="small" plain-text _id="usuarioLbl">
+        @usuario 
+      </vaadin-label>
+     </vaadin-vertical-layout>
+    </vaadin-horizontal-layout>
+   </vaadin-absolute-layout>
+  </vaadin-absolute-layout>
  </body>
 </html>

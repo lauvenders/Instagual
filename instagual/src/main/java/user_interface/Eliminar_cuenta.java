@@ -1,6 +1,8 @@
 package user_interface;
 
-public class Eliminar_cuenta {
+import com.instagual.instagual.Eliminar_cuenta_ventana;
+
+public class Eliminar_cuenta extends Eliminar_cuenta_ventana {
 	//private event _eliminar;
 	public Ajustes _ajustes;
 

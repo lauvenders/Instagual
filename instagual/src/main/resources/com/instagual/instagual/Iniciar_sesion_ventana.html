@@ -6,28 +6,30 @@
   <meta name="vaadin-version" content="8.1.5">
  </head>
  <body>
-  <vaadin-absolute-layout id="login_layout">
-   <vaadin-absolute-layout style-name="LoginPricipalLayout" _id="mainLayout">
-    <vaadin-image source="theme://images/logoTexto.jpeg" responsive height="262px" _id="imagenPrincipal"></vaadin-image>
-    <vaadin-vertical-layout spacing="false" responsive height="151px" margin="false" _id="loginVertLayout" :top="249px" :left="0px">
-     <vaadin-text-field caption="usuario" responsive width="90%" _id="textFieldUsuario" :center></vaadin-text-field>
-     <vaadin-password-field caption="Contraseña" width="90%" _id="textFieldContraseña" :center></vaadin-password-field>
+  <vaadin-absolute-layout style-name="LoginPricipalLayout" id="login_layout">
+   <vaadin-vertical-layout style-name="LoginPricipalLayout" size-full margin="false" _id="mainLayout">
+    <vaadin-image source="theme://images/logoTexto.jpeg" responsive height-full _id="imagenPrincipal" :center></vaadin-image>
+    <vaadin-vertical-layout margin="false" _id="dataLayout" :center>
+     <vaadin-vertical-layout responsive margin="false" _id="loginVertLayout">
+      <vaadin-text-field placeholder="Usuario" width="90%" _id="textFieldUsuario" :middle :center></vaadin-text-field>
+      <vaadin-password-field placeholder="Contraseña" width="90%" _id="textFieldContraseña" :center></vaadin-password-field>
+      <vaadin-button primary-style-name="white_text v-button-link v-button-small" height="40px" plain-text _id="recuperarpass" :center>
+        Recuperar contraseña 
+      </vaadin-button>
+      <vaadin-native-button primary-style-name="v-button" height="40px" plain-text _id="buttonIniciarSesion" :middle :center>
+        Iniciar sesión 
+      </vaadin-native-button>
+     </vaadin-vertical-layout>
     </vaadin-vertical-layout>
-    <vaadin-horizontal-layout width="53.66%" height="55px" _id="horizontalBotones" :top="431px" :left="185px">
-     <vaadin-native-button width="123px" plain-text _id="buttonIniciarSesion">
-       Iniciar sesión 
+    <vaadin-vertical-layout width-auto height-full margin="false" _id="botonesLayout" :center>
+     <vaadin-native-button primary-style-name="white_text v-button-link" height="40px" plain-text _id="buttonIniciarSesionInv" :center>
+       Entrar como invitado 
      </vaadin-native-button>
-     <vaadin-native-button width="123px" height="33px" plain-text _id="buttonIniciarSesionInv">
-       Invitado 
-     </vaadin-native-button>
-    </vaadin-horizontal-layout>
-    <vaadin-button plain-text _id="recuperarpass" :top="533px" :left="143px">
-      Recuperar contraseña 
-    </vaadin-button>
-    <vaadin-button plain-text _id="btnRegistrar" :top="533px" :left="370px">
-      Registro 
-    </vaadin-button>
-   </vaadin-absolute-layout>
+     <vaadin-button primary-style-name="v-button v-button-small" height="40px" plain-text _id="btnRegistrar" :middle :center>
+       Crear cuenta 
+     </vaadin-button>
+    </vaadin-vertical-layout>
+   </vaadin-vertical-layout>
   </vaadin-absolute-layout>
  </body>
 </html>
